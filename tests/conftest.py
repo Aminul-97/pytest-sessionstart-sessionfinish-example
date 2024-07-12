@@ -16,5 +16,5 @@ def pytest_sessionstart(session):
 
 @pytest.hookimpl()
 def pytest_sessionfinish(session):
-    print("\nTest session finish")
+    print("\nTest session finished!")
     
