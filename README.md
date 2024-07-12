@@ -1,8 +1,8 @@
-# Freezegun Example Code
-This repo contains the sample code for the article - **A Simple Guide To Controlling Time in Pytest using Freezegun**
+# Example Code
+This repo contains the sample code for the article - **Pytest sessionstart sessionfinish**
 
 # Requirements
-* Python (3.10.6)
+* Python (3.12)
 
 Please install the dependencies via the `requirements.txt` file using 
 ```bash
