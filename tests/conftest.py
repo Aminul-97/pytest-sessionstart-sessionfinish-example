@@ -1,17 +1,16 @@
 import pytest
-from src.rsa import Encrypt_decrypt
+from src.api_manager import Manage_api
 
 @pytest.hookimpl()
 def pytest_sessionstart(session):
     try:
-        ed = Encrypt_decrypt(12)
-        print("Object Creation successful!")
-        if [type(ed.generate_keys) == tuple]:
-             print("Key generation successful!")
+        api_mgr = Manage_api("https://digidates.de/api/v1/checkdate?date=2023-01-01")
+        if api_mgr.check_connection() == 200:
+             print("API connection successful!")
         else:
-            raise Exception("Failed to generate keys. Stopping the test.")
+            raise Exception("Invalid link.")
     except:
-        raise Exception("Failed to create object. Stopping the test.")
+        raise Exception("Failed to connect!")
     print("==== Entering the tests ====")
 
 @pytest.hookimpl()

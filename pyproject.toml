@@ -1,16 +1,16 @@
 [tool.poetry]
 name = "pytest-sessionstart-sessionfinish-example"
 version = "0.1.0"
-description = "Simple example on pytest sessionstart and sessionfinish hook!"
+description = "A simple exmaple demonstrating pytest sessionstart and sessionfinish hook."
 authors = ["Pytest-with-Eric"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-pytest = "^8.2.2"
+requests = "^2.32.3"
 
 [tool.poetry.group.dev.dependencies]
-rsa-python = "^0.1.1"
+pytest = "^8.2.2"
 
 [build-system]
 requires = ["poetry-core"]
