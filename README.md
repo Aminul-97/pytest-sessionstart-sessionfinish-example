@@ -1,19 +1,20 @@
-# Example Code
-This repo contains the sample code for the article - **Pytest sessionstart sessionfinish**
+# `pytest_sessionstart` and `pytest_sessionfinish` Hooks Example
+
+This repo contains the sample code for the article - [pytest_sessionstart and pytest_sessionfinish (A Complete Guide)](https://pytest-with-eric.com/hooks/pytest-sessionstart-sessionfinish/)
+
 
 # Requirements
 * Python (3.12)
 
-Please install the dependencies via the `requirements.txt` file using 
-```bash
-pip install -r requirements.txt
+Please install the dependencies via [Poetry](https://python-poetry.org/) by running the following command from the root of the repo 
+```shell
+poetry install
 ```
-If you don't have Pip installed, please follow instructions online on how to do it.
 
 # How To Run the Unit Tests
-To run the Unit Tests from the root of the repo, run
-```bash
-pytest -v
+To run the Unit Tests, from the root of the repo run
+```shell
+poetry run pytest
 ```
 
-If you have any questions about the project, please raise an Issue on GitHub. 
+If you have any questions about the project please raise an Issue on GitHub. 
